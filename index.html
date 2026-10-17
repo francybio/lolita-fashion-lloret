@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lolita · Calzado, bolsos y moda · Carrer de la Vila, 30 · Lloret de Mar</title>
+<meta name="description" content="Lolita, tienda de calzado, bolsos y moda en el Carrer de la Vila, 30 de Lloret de Mar, con firmas como Café Noir y Menbur. Ilumina el escaparate de noche y descubre lo que esconde.">
+<meta name="theme-color" content="#0D0B12">
+<meta property="og:title" content="Lolita · Lloret de Mar">
+<meta property="og:description" content="Calzado, bolsos y moda en el Carrer de la Vila, 30. Rule the night.">
+<meta property="og:image" content="assets/img/tacones-color.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23FF5EBC'/%3E%3Cstop offset='.5' stop-color='%237A5CFF'/%3E%3Cstop offset='1' stop-color='%2329D3C4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230D0B12'/%3E%3Cpath d='M22 14v36h22' stroke='url(%23g)' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700;900&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="Lolita, inicio">Lolita</a>
+  <nav class="nav__links" aria-label="Secciones">
+    <a href="#noche">El escaparate</a>
+    <a href="#percha">La percha</a>
+    <a href="#ringlight">En vídeo</a>
+    <a href="#visita">Carrer de la Vila, 30</a>
+  </nav>
+  <a class="nav__ig" href="https://www.instagram.com/lolitashoes2012/" target="_blank" rel="noopener" aria-label="Instagram de Lolita"><i class="ph ph-instagram-logo"></i></a>
+  <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menú"><span></span><span></span></button>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#noche">El escaparate</a><a href="#percha">La percha</a><a href="#ringlight">En vídeo</a><a href="#visita">Carrer de la Vila, 30</a>
+</div>
+
+<main id="top">
+
+  <!-- ============ PORTADA ============ -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <p class="hero__k">Calzado · Bolsos · Moda · Lloret de Mar</p>
+    <h1 class="hero__title">Lolita</h1>
+    <p class="hero__rule"><span>Rule</span> <em>the</em> <span>night</span></p>
+    <figure class="hero__shop">
+      <img src="assets/img/fachada.jpg" alt="Fachada de la tienda Lolita en el Carrer de la Vila, con el rótulo de Café Noir y Menbur" fetchpriority="high">
+      <figcaption>Carrer de la Vila, 30</figcaption>
+    </figure>
+    <div class="hero__brands" aria-label="Firmas en el rótulo"><span>Café Noir</span><i></i><span>Menbur</span><i></i><span>Lolita</span></div>
+    <a class="hero__down" href="#noche"><span>Enciende el escaparate</span><i class="ph ph-flashlight"></i></a>
+  </section>
+
+  <!-- ============ ESCAPARATE DE NOCHE ============ -->
+  <section class="noche" id="noche">
+    <header class="sec-head">
+      <p class="kicker">01 · Interactivo</p>
+      <h2 class="h2">El escaparate<br><em>de noche</em></h2>
+      <p class="lead">La tienda ha cerrado y solo queda tu linterna. Pásala por el cristal: cuando ilumines una pieza, te dirá qué es.</p>
+    </header>
+    <div class="vitrina" id="vitrina">
+      <div class="vitrina__grid">
+        <figure class="cell cell--a"><img src="assets/img/escaparate.jpg" alt="Escaparate con botas altas, bolso acolchado con cadena y deportivas" draggable="false"></figure>
+        <figure class="cell cell--b"><img src="assets/img/tacones-color.jpg" alt="Sandalias de tacón metalizadas en rosa, turquesa y verde con bolso a juego" draggable="false"></figure>
+        <figure class="cell cell--c"><img src="assets/img/interior.jpg" alt="Interior de Lolita con maniquíes, pared de zapatos y bolsos" draggable="false"></figure>
+        <figure class="cell cell--d"><img src="assets/img/p-52158.jpg" alt="Sandalias de tacón con cadena dorada" draggable="false"></figure>
+        <figure class="cell cell--e"><img src="assets/img/p-w66.jpg" alt="Chanclas de cuña con cristales" draggable="false"></figure>
+      </div>
+      <div class="spots" id="spots"></div>
+      <div class="vitrina__night" id="night" aria-hidden="true"></div>
+      <div class="vitrina__glass" aria-hidden="true"></div>
+    </div>
+    <div class="vitrina__ui">
+      <p class="found"><b id="foundN">0</b> / <span id="foundT">7</span> piezas descubiertas</p>
+      <ul class="found__list" id="foundList" aria-live="polite"></ul>
+      <button class="btn btn--iri" type="button" id="lights"><i class="ph ph-lightbulb"></i><span>Encender las luces</span></button>
+    </div>
+  </section>
+
+  <!-- ============ LA PERCHA ============ -->
+  <section class="percha" id="percha">
+    <header class="sec-head sec-head--row">
+      <div>
+        <p class="kicker">02 · La percha</p>
+        <h2 class="h2">Recién <em>colgado</em></h2>
+      </div>
+      <p class="lead">Arrastra la barra: las piezas se balancean en sus perchas. Toca una para verla de cerca.</p>
+    </header>
+    <div class="rail" id="rail">
+      <span class="rail__bar" aria-hidden="true"></span>
+      <div class="rail__track" id="railTrack"></div>
+    </div>
+  </section>
+
+  <!-- ============ RING LIGHT (vídeo) ============ -->
+  <section class="ringlight" id="ringlight">
+    <div class="ring" aria-hidden="true"></div>
+    <figure class="ring__phone">
+      <video src="assets/video/bota-vaquera.mp4" poster="assets/img/v-bota-vaquera.jpg" muted loop playsinline preload="none" aria-label="Bota alta vaquera girando en el podio"></video>
+    </figure>
+    <div class="ringlight__copy">
+      <p class="kicker">03 · En vídeo</p>
+      <h2 class="h2">Denim <em>de pies</em> a cabeza</h2>
+      <p class="lead">La bota alta vaquera, girando en el podio de la tienda. Lo nuevo sale primero en nuestro Instagram.</p>
+      <a class="btn btn--line" href="https://www.instagram.com/lolitashoes2012/" target="_blank" rel="noopener"><i class="ph ph-instagram-logo"></i><span>@lolitashoes2012</span></a>
+    </div>
+  </section>
+
+  <!-- ============ VISITA ============ -->
+  <section class="visita" id="visita">
+    <div class="visita__copy">
+      <p class="kicker">04 · Visítanos</p>
+      <h2 class="h2">Carrer de la Vila, <em>30</em></h2>
+      <p class="lead">En la calle comercial del centro de Lloret de Mar. Horario de temporada: escríbenos por Instagram y te lo confirmamos.</p>
+      <div class="visita__btns">
+        <a class="btn btn--iri" href="https://ig.me/m/lolitashoes2012" target="_blank" rel="noopener"><i class="ph ph-chat-circle-text"></i><span>Escríbenos</span></a>
+        <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&query=Lolita%2C%20Carrer%20de%20la%20Vila%2030%2C%20Lloret%20de%20Mar" target="_blank" rel="noopener"><i class="ph ph-map-pin"></i><span>Cómo llegar</span></a>
+      </div>
+      <div class="family">
+        <p>También en Lloret</p>
+        <a href="https://francybio.github.io/lolita-shoes-lloret/" target="_blank" rel="noopener"><b>Lolita Shoes</b><span>Carrer de la Vila, 52</span><i class="ph ph-arrow-up-right"></i></a>
+        <a href="https://francybio.github.io/lolita-kids-lloret/" target="_blank" rel="noopener"><b>Lolita Kids</b><span>Carrer dels Horts, 2</span><i class="ph ph-arrow-up-right"></i></a>
+      </div>
+    </div>
+    <div class="visita__map"><iframe title="Mapa: Lolita, Carrer de la Vila 30, Lloret de Mar" src="https://maps.google.com/maps?q=Carrer%20de%20la%20Vila%2030%2C%20Lloret%20de%20Mar&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__big" aria-hidden="true">Lolita</p>
+  <div class="foot__row">
+    <span>Lolita · Carrer de la Vila, 30 · 17310 Lloret de Mar</span>
+    <span>Fotos: Google e Instagram @lolitashoes2012</span>
+  </div>
+</footer>
+
+<!-- visor -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Vista ampliada" hidden>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb__close" type="button" aria-label="Cerrar"><i class="ph ph-x"></i></button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
